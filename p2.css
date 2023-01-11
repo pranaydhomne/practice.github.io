@@ -1,0 +1,198 @@
+/* css reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+/* navbar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+
+/* logo */
+
+#navbar #logo {
+    margin: 0px 10px;
+    padding: 10px;
+}
+
+#navbar #logo img {
+    height: 50px;
+}
+
+
+/* nav bar  */
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul a {
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    border-radius: 21px;
+    text-decoration: none;
+    padding: 0px 28px;
+    font-size: 0.9rem;
+}
+
+#navbar ul a:hover {
+    color: black;
+    background-color: white;
+    border-radius: 21px;
+}
+
+
+/* home section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 497px;
+    width: 100%;
+   
+}
+
+#home::before {
+    content: "";
+    background: url(/img/bg.webp) no-repeat center/cover;
+    /* background: url(/img/bg.webp)) no-repeat center center/cover; */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    opacity: 0.9;
+}
+
+.heading {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 2.5rem;
+    color:white;
+}
+
+#home .para {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#home .btn {
+    width: 150px;
+    margin: 20px;
+    padding: 0px 0;
+    border: solid white;
+    border-radius: 25px;
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 0.9rem;
+}
+
+#home .btn:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+/* service section */
+
+#contenar {
+    height: 400px;
+    background-color: #d5cfc7;
+}
+
+#contenar #item {
+    display: flex;
+    justify-content: center;
+}
+
+#contenar #item h2 {
+    text-align: center;
+}
+
+#contenar .items {
+    width: 22%;
+    height: 250px;
+    margin: 5px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #f8e9e9;
+}
+
+#contenar #item img {
+    height: 90px;
+    display: block;
+    margin: 10px auto;
+}
+
+#contenar #item .contenar-p {
+    font-family: 'Baloo Bhaina 2', cursive;
+    margin: 7px;
+    font-size: 12px;
+}
+
+
+/* client section  */
+
+#client-section {
+    height: 201px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(/img/clients-bg.jpg);
+    z-index: -1;
+    content: "";
+    opacity: 0.9;
+    height: 200px;
+    width: 100%;
+}
+
+#client-section h1 {
+    color: white;
+}
+
+#clients {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#clients .clients-item img {
+    height: 90px;
+    padding: 10px 25px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* coustom */
+
+.headings {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 13px;
+}
